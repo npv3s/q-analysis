@@ -1,0 +1,10 @@
+service: calc
+runtime: python38
+
+handlers:
+  - url: /
+    static_files: build/app.html
+    upload: app.html
+
+  - url: /*
+    static_dir: build
